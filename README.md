@@ -17,8 +17,7 @@ asr_transformer/
 │   ├── data.py              # Tokenizer, datasets, DataLoader
 │   ├── model.py             # Model loading
 │   ├── train.py             # Training pipeline (ASRTrainer / ProgressiveTrainer)
-│   ├── inference.py         # Inference pipeline
-│   └── submission.py        # Submission (model_metadata, results.csv)
+│   └── inference.py         # Inference pipeline, save results CSV
 ├── main.py                  # Main entry point
 ├── run.sh                   # Helper script (Linux/macOS)
 ├── run.ps1                  # Helper script (Windows)

@@ -1,9 +1,18 @@
-"""Data module: Tokenizer, Datasets, Dataloaders."""
+"""Data module: Tokenizer, Datasets, Dataloaders.
+
+Data is configured in config/config.yaml under 'data':
+  - root: path to LibriSpeech-style dir (e.g. ./hw4_data/hw4p2_data)
+  - train_partition, val_partition, test_partition: subdir names (train-clean-100, dev-clean, test-clean)
+  - batch_size, NUM_WORKERS, norm, specaug, etc.
+
+Override data root at runtime: main.py --data-root /path/to/your/data
+Actual loading (fbank, text) is done by hw4lib.data.ASRDataset.
+"""
 
 import gc
 from torch.utils.data import DataLoader
 
-# Depends on hw4lib (add handout dir to project root or PYTHONPATH)
+# Depends on hw4lib (add transformer-from-scratch to PYTHONPATH)
 from hw4lib.data import H4Tokenizer, ASRDataset, verify_dataloader
 
 

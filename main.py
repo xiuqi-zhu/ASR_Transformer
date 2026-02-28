@@ -37,8 +37,7 @@ from src.train import (
     setup_optimizer_and_scheduler,
     DEFAULT_PROGRESSIVE_STAGES,
 )
-from src.inference import run_recognition, load_lm_for_shallow_fusion
-from src.submission import generate_model_metadata, save_results_csv
+from src.inference import run_recognition, load_lm_for_shallow_fusion, save_results_csv
 
 
 def parse_args():
@@ -202,7 +201,6 @@ def main():
         )
 
         save_results_csv(results_df, args.output)
-        generate_model_metadata(model)
         trainer.cleanup()
 
     print("Done.")

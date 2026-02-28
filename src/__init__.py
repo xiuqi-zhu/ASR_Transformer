@@ -15,8 +15,7 @@ from .train import (
     setup_optimizer_and_scheduler,
     DEFAULT_PROGRESSIVE_STAGES,
 )
-from .inference import run_recognition, load_lm_for_shallow_fusion
-from .submission import generate_model_metadata, save_results_csv
+from .inference import run_recognition, load_lm_for_shallow_fusion, save_results_csv
 
 __all__ = [
     "load_config",
@@ -32,6 +31,5 @@ __all__ = [
     "DEFAULT_PROGRESSIVE_STAGES",
     "run_recognition",
     "load_lm_for_shallow_fusion",
-    "generate_model_metadata",
     "save_results_csv",
 ]

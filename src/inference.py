@@ -3,6 +3,12 @@
 import pandas as pd
 
 
+def save_results_csv(results_df, path: str = "results.csv"):
+    """Save inference results to CSV."""
+    results_df.to_csv(path, index=False)
+    print(f"Results saved to {path}")
+
+
 def run_recognition(
     trainer,
     test_loader,
