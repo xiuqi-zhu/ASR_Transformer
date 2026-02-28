@@ -1,0 +1,13 @@
+# ASR Transformer - Dependencies
+# Note: Also requires transformer-from-scratch (add to PYTHONPATH):
+#   git clone https://github.com/xiuqi-zhu/transformer-from-scratch.git
+
+torch>=2.0.0
+torchaudio>=2.0.0
+pyyaml
+pandas
+wandb
+numpy
+tqdm
+torchinfo
+torchmetrics
